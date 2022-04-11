@@ -22,8 +22,8 @@ export default function Register() {
     setUsername(usernameRef.current.value);
     setPassword(passwordRef.current.value);
     try {
-      await axios.post('auth/register', { email, username, password });
-      history.push('/login');
+      await axios.post('https://netflix-node-react-kotcherga.herokuapp.com/auth/register', { email, username, password });
+      history.push('https://netflix-node-react-kotcherga.herokuapp.com/login');
     } catch (err) {}
   }
 
