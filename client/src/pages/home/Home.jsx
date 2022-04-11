@@ -13,7 +13,7 @@ const Home = ({ type }) => {
     const getRandomLists = async () => {
       try {
         const res = await axios.get(
-          `https://netflix-node-react-kotcherga.herokuapp.com/lists${type ? "?type=" + type : ""}${
+          `https://netflix-node-react-kotcherga.herokuapp.com/api/lists${type ? "?type=" + type : ""}${
             genre ? "&genre=" + genre : ""
           }`,
           {

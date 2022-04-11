@@ -5,7 +5,7 @@ export const login = async (user, dispatch) => {
   dispatch(loginStart());
   try {
     const res = await axios.post(
-			'https://netflix-node-react-kotcherga.herokuapp.com/auth/login',
+			'https://netflix-node-react-kotcherga.herokuapp.com/api/auth/login',
 			user,
 		);
     dispatch(loginSuccess(res.data));
